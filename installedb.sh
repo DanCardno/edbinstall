@@ -11,3 +11,4 @@ sudo sed -i 's/enabled=0/enabled=1/g' /etc/yum.repos.d/edb.repo
 echo "******************************"
 echo "******     Patched      ******"
 echo "******************************"
+sudo yum install edb-as11 -y
