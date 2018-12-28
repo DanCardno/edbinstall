@@ -1,0 +1,23 @@
+#!/bin/bash
+
+PS3='Please enter your choice: '
+options=("EPAS11" "PEM" "MTK" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "EPAS11")
+            echo "you chose choice 1"
+            ;;
+        "PEM")
+            echo "you chose choice 2"
+            ;;
+        "MTK")
+            echo "you chose choice $REPLY which is $opt"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
+
