@@ -18,7 +18,7 @@ do
         "MTK")
             echo "Installing $opt"
             sudo chmod +x ./installmtk.sh
-            sudo ./installmtk
+            sudo ./installmtk.sh
             ;;
         "Quit")
             break
