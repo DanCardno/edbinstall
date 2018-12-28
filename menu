@@ -10,7 +10,8 @@ do
             ./installedb11.sh
             ;;
         "PEM")
-            echo "you chose choice 2"
+            echo "Installing $opt"
+            ./installpem.sh
             ;;
         "MTK")
             echo "you chose choice $REPLY which is $opt"
