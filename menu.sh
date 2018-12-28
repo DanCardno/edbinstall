@@ -16,7 +16,9 @@ do
             sudo ./installpem.sh
             ;;
         "MTK")
-            echo "you chose choice $REPLY which is $opt"
+            echo "Installing $opt"
+            sudo chmod +x ./installmtk.sh
+            sudo ./installmtk
             ;;
         "Quit")
             break
