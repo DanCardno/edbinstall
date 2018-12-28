@@ -7,11 +7,13 @@ do
     case $opt in
         "EPAS11")
             echo "Installing $opt"
-            ./installedb11.sh
+            sudo chmod +x installedb11.sh
+            sudo ./installedb11.sh
             ;;
         "PEM")
             echo "Installing $opt"
-            ./installpem.sh
+            sudo chmod +x ./installpem.sh
+            sudo ./installpem.sh
             ;;
         "MTK")
             echo "you chose choice $REPLY which is $opt"
