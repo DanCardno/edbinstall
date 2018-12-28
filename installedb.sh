@@ -12,3 +12,5 @@ echo "******************************"
 echo "******     Patched      ******"
 echo "******************************"
 sudo yum install edb-as11 -y
+sudo /usr/edb/as11/bin/edb-as-11-setup initdb
+sudo systemctl start edb-as-11
