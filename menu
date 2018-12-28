@@ -6,7 +6,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "EPAS11")
-            echo "you chose choice 1"
+            echo "Installing $opt"
+            ./installedb11.sh
             ;;
         "PEM")
             echo "you chose choice 2"
