@@ -9,7 +9,8 @@ echo "******************************"
 read userstring
 # Copy and modify repo file
 
-sudo cp /etc/yum.repos.d/edb.repo edb_backup.repo
+sudo cp /etc/yum.repos.d/edb.repo /etc/yum.repos.d/edb_backup.repo
+sudo sed -i "s/<username>:<password>/${userstring}/g" edb.repo
 sudo sed -i "\/enterprisedb-dependencies/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
 sudo sed -i "\/enterprisedb-tools/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
 sudo sed -i "\/edbas11/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
