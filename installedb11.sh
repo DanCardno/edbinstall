@@ -15,6 +15,7 @@ sudo sed -i "s/<username>:<password>/${userstring}/g" /etc/yum.repos.d/edb.repo
 sudo sed -i "\/enterprisedb-dependencies/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
 sudo sed -i "\/enterprisedb-tools/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
 sudo sed -i "\/edbas11/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
+sudo sed -i "\/enterprisedb-xdb60/,/gpgcheck/s/enabled=0/enabled=1/" /etc/yum.repos.d/edb.repo
 echo "******************************"
 echo "******     Patched      ******"
 echo "******************************"
