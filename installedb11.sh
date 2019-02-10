@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install Prerequisites
+sudo rpm -Uvh http://yum.enterprisedb.com/edbrepos/edb-repo-latest.noarch.rpm
 sudo adduser enterprisedb
 sudo yum install nano wget mlocate java git epel-release telnet -y
 echo "******************************"
