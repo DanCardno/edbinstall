@@ -2,7 +2,6 @@
 
 # Install Prerequisites
 sudo adduser enterprisedb
-sudo rpm -Uvh http://yum.enterprisedb.com/edbrepos/edb-repo-latest.noarch.rpm
 sudo yum install nano wget mlocate java git epel-release telnet -y
 echo "******************************"
 echo "****** Enter userstring ******"
