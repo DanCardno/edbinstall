@@ -5,7 +5,7 @@ options=("EPAS11" "PEM" "MTK" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "EPAS11")
+        "EPAS-11")
             echo "Installing $opt"
             sudo chmod +x installedb11.sh
             sudo ./installedb11.sh
