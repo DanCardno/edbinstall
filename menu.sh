@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 PS3='Please enter your choice: '
 options=("EPAS11" "PEM" "MTK" "Quit")
 select opt in "${options[@]}"
